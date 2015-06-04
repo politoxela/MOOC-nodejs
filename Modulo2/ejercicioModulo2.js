@@ -23,7 +23,7 @@ function agenda(titulo, inic) {
             for (var nombre in _contenido) {
                 miLista = miLista + nombre + ", " + _contenido[nombre] + " \n";
             };
-            console.log(_lista);
+            console.log(miLista);
         }
     }
 };
