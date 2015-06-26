@@ -1,16 +1,15 @@
 var express = require('express');
 var app = express();
 
-app.get('/user/:id', function(req, res, next){
-    if(req.params.id === "Ana" || req.params.id === "Eva"){
+app.get('/user/:id', function (req, res, next) {
+    if (req.params.id === "Ana" || req.params.id === "Eva") {
         res.send('Usuario del sistema');
-    }
-    else{
+    } else {
         next();
     }
 });
 
-app.get('*', function(req, res){
+app.get('*', function (req, res) {
     res.send('Usuario Desconocido');
 });
 
